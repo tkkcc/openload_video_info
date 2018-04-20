@@ -137,7 +137,7 @@ const formatBytes = (bytes, decimals) => {
 	const nodes = await waitForAll('video[src]')
 	const video = nodes[0]
 	const url = video.src
-	let rpc = GM_getValue('rpc',`http://localhost:6800/jsonrpc#stream-piece-selector=geom`)
+	let rpc = GM_getValue('rpc',`http://localhost:6800/jsonrpc`)
 	// node
 	const $duration = document.querySelector('div.vjs-duration.vjs-time-control.vjs-control')
 	$duration.insertAdjacentHTML('afterend', `
